@@ -3,15 +3,24 @@ import "../style.css";
 
 function App() {
 	const [clockState, setClockState] = useState();
+	const [dateState, setDateState] = useState();
 
 	useEffect(() => {
 		setInterval(() => {
-			const date = new Date();
-			setClockState(date.toLocaleTimeString());
+			const time = new Date();
+			setClockState(time.toLocaleTimeString());
 		}, 1000);
+		const date = new Date();
+		setDateState(date.toLocaleDateString());
 	}, []);
 
-	return <div className='clock'>{clockState}</div>;
+	return (
+		<div className='clock'>
+			{clockState}
+			<br></br>
+			{dateState}
+		</div>
+	);
 }
 
 export default App;
