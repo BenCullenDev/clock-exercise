@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'digital';
+    src: local('digital'), url(./fonts/DS-DIGI.TTF) format('truetype')
+}
+
+.clock {
+    width: 50%;
+    height: 50%;
+    
+    font-size: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: digital, sans-serif;
+    margin: auto;
+    color: rgba(250, 178, 8, 0.893);
+
+    text-align: center
+}
+
+@media only screen and (max-width: 600px) {
+    .clock {
+      font-size: xx-large;
+    }
+  }
