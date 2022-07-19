@@ -15,7 +15,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className='clock'>
+		<div data-testid='clock' className='clock'>
 			{clockState}
 			<br></br>
 			{dateState}
