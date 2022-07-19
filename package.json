@@ -2,7 +2,7 @@
   "name": "clock-exercise",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://BenCullenDev.github.io",
+  "homepage": "https://bencullendev.github.io/clock-exercise/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
